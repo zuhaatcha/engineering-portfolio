@@ -84,6 +84,33 @@
       margin-top: 3rem;
       border-radius: 12px;
     }
+    .image-row {
+      display: flex;
+      justify-content: center; /* center them horizontally */
+      gap: 20px; /* space between images */
+      flex-wrap: wrap; /* optional: wrap to new line on small screens */
+      margin-top: 20px;
+    }
+
+  .image-card {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .image-card:hover {
+    transform: scale(1.05);
+  }
+
+  .image-card img {
+    height: 200px; /* or adjust to your preferred size */
+    width: auto;
+    display: block;
+  }
+
   </style>
 </head>
 <body>
@@ -114,9 +141,17 @@
         Gained certification from LinkedIn Learning covering best practices, flat-pattern conversion, and fabrication-ready technical drawings.
       </p>
       <p><strong>Skills:</strong> SolidWorks, Design for Manufacturing (DFM), Sheet Metal Tools, Flat Patterns</p>
-      <img src="images/forming_tool.png" alt="Sheet Metal Design" width="250">
-      <img src="images/hem.png" alt="Modal Analysis Result" width="250">
-      <img src="images/mitter.png" alt="Composite Simulation" width="250">
+      <div class="image-row">
+        <div class="image-card">
+          <img src="images/forming_tool.png" alt="Forming Tool">
+        </div>
+      <div class="image-card">
+        <img src="images/mitter.png" alt="Mitter Tool">
+      </div>
+      <div class="image-card">
+        <img src="images/hem.png" alt="Hem Tool">
+      </div>
+    </div>
     </div>
 
     <div class="project">
