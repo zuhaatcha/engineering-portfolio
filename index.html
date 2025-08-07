@@ -91,6 +91,12 @@
       flex-wrap: wrap; /* optional: wrap to new line on small screens */
       margin-top: 20px;
     }
+    .image-row img {
+    width: 300px; /* adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
   .image-card {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -106,7 +112,15 @@
     width: auto;
     display: block;
   }
+  .gif-container {
+      text-align: center;
+    }
 
+  .gif-container img {
+    width: 400px; /* adjust as needed */
+    height: auto;
+    border-radius: 10px;
+  }
   </style>
 </head>
 <body>
@@ -151,11 +165,30 @@
     </div>
 
     <div class="project">
-      <h3>Modal Analysis with ANSYS</h3>
+      <h3>Punch Test with ANSYS</h3>
       <p>
-        Conducted modal analysis simulations using ANSYS to evaluate the natural frequencies and mode shapes of mechanical structures. Explored various boundary conditions and mesh refinements.
+       Analysed the displacement and strain profiles of the material DP1000 steel using 3D Digital Image Correlation.
       </p>
-      <p><strong>Skills:</strong> ANSYS Workbench, Modal Analysis, Meshing, Boundary Conditions</p>
+      <p>
+        Examined the tensile stress/strain behaviour of DP1000.
+      </p>
+      <p>
+        Determined the true stress/strain data and evaluated young's modulus for the material.
+      </p>
+      <p>Assessed the out-of-plane displacement and strain components at the point of failure.
+      </p>
+      <p>
+        Compared the experimental results with computational simulations using ANSYS for validation and further analysis.
+      </p>
+      <p><strong>Skills:</strong> ANSYS Workbench, Meshing, Boundary Conditions</p>
+    
+      <div class="image-row">
+        <img src="images/punchtestsetup.png" alt="Image 1">
+        <img src="images/StrainXZ.png" alt="Image 2">
+      </div>
+      <div class="gif-container">
+        <img src="images/punch_test.gif" alt="ANSYS Deformation Animation">
+      </div>
     </div>
 
     <div class="project">
